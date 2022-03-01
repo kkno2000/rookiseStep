@@ -4,7 +4,7 @@
 
 int main10() {
 	char input[20] = { 0 };
-	system("shutdown -s -t 60");//shutdown -a是取消关机 systme()执行系统命令
+	system("shutdown -s -t 60");//shutdown -a是取消关机 system()执行系统命令
 again:
 	printf("电脑将在1min内关机，请输入：取消关机状态。请输入：\n");
 	scanf("%s", input);
