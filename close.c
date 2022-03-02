@@ -4,11 +4,11 @@
 
 int main10() {
 	char input[20] = { 0 };
-	system("shutdown -s -t 60");//shutdown -aÊÇÈ¡Ïû¹Ø»ú systme()Ö´ÐÐÏµÍ³ÃüÁî
+	system("shutdown -s -t 60");//shutdown -aæ˜¯å–æ¶ˆå…³æœº system()æ‰§è¡Œç³»ç»Ÿå‘½ä»¤
 again:
-	printf("µçÄÔ½«ÔÚ1minÄÚ¹Ø»ú£¬ÇëÊäÈë£ºÀîÔÃâý´óË§¸ç£¬È¡Ïû¹Ø»ú×´Ì¬¡£ÇëÊäÈë£º\n");
+	printf("ç”µè„‘å°†åœ¨1minå†…å…³æœºï¼Œè¯·è¾“å…¥ï¼šå–æ¶ˆå…³æœºçŠ¶æ€ã€‚è¯·è¾“å…¥ï¼š\n");
 	scanf("%s", input);
-	if (strcmp(input, "ÀîÔÃâý´óË§¸ç") == 0) //£¨1£©×Ö·û´®1 = ×Ö·û´®2£¬·µ»Ø0£¨2£©×Ö·û´®1 > ×Ö·û´®2£¬·µ»ØÒ»¸öÕýÕûÊý£¨3£©×Ö·û´®1 < ×Ö·û´®2£¬·µ»ØÒ»¸ö¸ºÕûÊý¡£
+	if (strcmp(input, "å–æ¶ˆå…³æœºçŠ¶æ€") == 0) //ï¼ˆ1ï¼‰å­—ç¬¦ä¸²1 = å­—ç¬¦ä¸²2ï¼Œè¿”å›ž0ï¼ˆ2ï¼‰å­—ç¬¦ä¸²1 > å­—ç¬¦ä¸²2ï¼Œè¿”å›žä¸€ä¸ªæ­£æ•´æ•°ï¼ˆ3ï¼‰å­—ç¬¦ä¸²1 < å­—ç¬¦ä¸²2ï¼Œè¿”å›žä¸€ä¸ªè´Ÿæ•´æ•°ã€‚
 	{
 		system("shutdown -a");
 	}
