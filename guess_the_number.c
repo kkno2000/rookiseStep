@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<time.h>
 
@@ -10,21 +9,21 @@ void menu() {
 
 void game() {
 	int random_number = 0;
-	random_number = rand() % 100 + 1;//Éú³É1-100Ëæ»úÊı
+	random_number = rand() % 100 + 1;//ç”Ÿæˆ1-100éšæœºæ•°
 	while (1)
 	{
 		int choice = 0;
-		printf("ÇëÊäÈëÄã²Â²âµÄÊı×Ö£º\n");
+		printf("è¯·è¾“å…¥ä½ çŒœæµ‹çš„æ•°å­—ï¼š\n");
 		scanf("%d", &choice);
 		if (choice > random_number)
-			printf("²Â´óÁË£¬ÇëÖØÊÔ\n");
+			printf("çŒœå¤§äº†ï¼Œè¯·é‡è¯•\n");
 		else if (choice < random_number)
 		{
-			printf("²ÂĞ¡ÁË£¬ÇëÖØÊÔ\n");
+			printf("çŒœå°äº†ï¼Œè¯·é‡è¯•\n");
 		}
 		else
 		{
-			printf("¹§Ï²Äú²ÂÖĞÁË£¡Êı×ÖÕıÊÇ£º%d\n", random_number);
+			printf("æ­å–œæ‚¨çŒœä¸­äº†ï¼æ•°å­—æ­£æ˜¯ï¼š%d\n", random_number);
 			break;
 		}
 	}
@@ -32,10 +31,10 @@ void game() {
 
 int main() {
 	int input = 0;
-	srand((unsigned int)time(NULL));//ÓÃÊ±¼ä´ÁÀ´Éú³ÉÒ»¸öËæ»úÊı
+	srand((unsigned int)time(NULL));//ç”¨æ—¶é—´æˆ³æ¥ç”Ÿæˆä¸€ä¸ªéšæœºæ•°
 	do {
 		menu();
-		printf("ÇëÑ¡Ôñ£¨1/2£©£º\n");
+		printf("è¯·é€‰æ‹©ï¼ˆ1/2ï¼‰ï¼š\n");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -43,7 +42,7 @@ int main() {
 			game();
 			break;
 		case 2:
-			printf("ÄúÒÑÍË³ö¶Ô¾Ö\n");
+			printf("æ‚¨å·²é€€å‡ºå¯¹å±€\n");
 			break;
 		default:
 			printf("ERROR\n");
