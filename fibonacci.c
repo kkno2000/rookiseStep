@@ -1,6 +1,6 @@
-//���n��쳲�������
+//求第n个斐波那契数
 
-//Ч��̫��
+//效率太低
 int fibo(int x) {
 	if (x <= 2) {
 		return 1;
@@ -8,7 +8,7 @@ int fibo(int x) {
 	else
 		return fibo(x - 1) + fibo(x - 2);
 }
-//ͨ�������ķ�ʽ
+//通过迭代的方式
 int fastFibo(int x) {
 	int a = 1;
 	int b = 1;
